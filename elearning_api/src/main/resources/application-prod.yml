@@ -35,11 +35,6 @@ ui:
   url: "http://localhost"
   forgot-password:
     url: ${ui.url}/password-confirm
-outbound:
-  identity:
-    client-id: "267032846386-hchqmc5j59qi1ti287asu2bgb9fafqk1.apps.googleusercontent.com"
-    client-secret: "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"
-    redirect-uri: "${ui.url}/authenticate"
 
 payment:
   vnPay:
