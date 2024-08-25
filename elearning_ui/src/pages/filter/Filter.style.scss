@@ -1,0 +1,127 @@
+.filter-container {
+    display: flex;
+    padding: 40px 42px;
+    gap: 15px;
+
+    .filter-left {
+        flex: 2;
+
+        .filter-form {
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-right: 40px;
+            gap: 15px;
+
+            .filter-btn {
+                display: flex;
+                gap: 10px;
+                margin: 0;
+                min-width: 100%;
+
+                .filter-btn-reset {
+                    color: var(--color-gray-500);
+                    background-color: transparent;
+                    border: 1px solid #2d2f31;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border-radius: 0;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+
+                .filter-select-sort {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .filter-label-sort {
+                        font-size: 16px;
+                    }
+
+                    .filer-selection {
+                        border-radius: 0;
+                        width: 300px;
+                    }
+                }
+            }
+
+            .filter-form-item {
+                display: flex;
+                flex-direction: column;
+                min-width: 400px;
+
+                .filter-form-devider {
+                    width: 200px !important;
+                    margin: 0;
+                    background-color: #d1d7dd;
+                }
+
+                .filter-form-header {
+                    color: #2d2f31;
+                    text-align: left;
+                    white-space: normal;
+                    font-size: 19px;
+                    margin-top: 10px;
+                }
+
+                .filter-form-content {
+                    margin-top: 15px;
+                    font-size: 12px;
+
+                    .filter-form-content-category {
+                        display: flex;
+                        align-items: center;
+
+                        .radio-cat-name {
+                            width: 200px;
+                        }
+                    }
+
+                    .filter-form-content-checkbox {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .filter-form-content-rating {
+                            font-size: 12px;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .filter-right {
+        flex: 7;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .filter-right-container {
+            display: flex;
+            flex-direction: column;
+
+
+
+            .filter-right-course-devider {
+                background-color: #d1d7dd;
+                width: 100%;
+            }
+        }
+
+
+
+
+    }
+}

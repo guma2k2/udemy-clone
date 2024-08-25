@@ -1,0 +1,532 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --color-gray-600: #101112;
+  --color-gray-550: #1c1d1f;
+  --color-gray-500: #2d2f31;
+  --color-gray-400: #3e4143;
+  --color-gray-300: #6a6f73;
+  --color-gray-250: #9da3a7;
+  --color-gray-200: #d1d7dc;
+  --color-gray-150: #e4e8eb;
+  --color-gray-100: #f7f9fa;
+  --color-violet: #5624d0;
+  --bg-color-white: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.drawer-learning-note {
+  .ant-drawer-content {
+    .learning-note-view-container {
+      .learning-note-view-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+
+        .learning-note-selection {
+          .learning-note-fetch {
+            width: 250px;
+          }
+        }
+      }
+
+      .learning-note-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+.review-modal {
+  .ant-modal-content {
+    min-width: 600px;
+    margin: 16px 24px;
+    font-family: Arial, -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    .ant-modal-body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      .review-modal-rating-text {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .review-modal-rating-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px !important;
+      }
+    }
+  }
+}
+
+.review-course-modal {
+  .ant-modal-content {
+    font-family: Arial, -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    .ant-modal-body {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .review-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .review-total-rating {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+
+      .review-filter-container {
+        display: flex;
+        gap: 40px;
+
+        .review-filter-left {
+          flex: 3;
+
+
+          .review-filter-left-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 220px;
+            margin-bottom: 5px;
+
+            .review-filter-left-rating {
+              flex: 1;
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              cursor: pointer;
+
+              .review-filter-left-progress {
+                font-size: 10px;
+                max-width: 75px;
+                display: flex;
+                align-items: center;
+                border-radius: 0 !important;
+              }
+
+              .review-filter-left-rate {
+                font-size: 12px;
+              }
+
+              span {
+                text-align: center;
+              }
+
+
+
+
+            }
+
+            .review-cancel-filter {
+              width: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            &.active {
+              opacity: .25;
+            }
+
+          }
+
+
+        }
+
+        .review-filter-right {
+          flex: 6;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          gap: 10px;
+
+
+        }
+      }
+    }
+  }
+}
+
+.popover-carts {
+  .popover-cart-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    width: 305px;
+
+    .popover-cart-top {
+      height: calc(500px - 115px);
+      width: 100%;
+      overflow-y: scroll;
+
+      .popover-carts-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .popover-carts-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 5px;
+
+          .popover-carts-item-left {
+            flex: 3;
+
+            img {
+              width: 64px;
+              height: 64px;
+              object-fit: cover;
+            }
+          }
+
+          .popover-carts-item-right {
+            flex: 7;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h3 {
+              font-size: 14px;
+            }
+
+            .popover-carts-item-instructor {
+              font-size: 12px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .popover-cart-devider {
+          background-color: #909498;
+          width: 100%;
+          margin: 0;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .popover-cart-bottom {
+      height: 90px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      color: #2d2f31;
+      gap: 10px;
+
+      .popover-cart-bottom-price {
+        font-size: 19px;
+        font-weight: 700;
+      }
+
+      .popover-cart-bottom-btn {
+        width: 100%;
+        height: 49px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.popover-profiles {
+  .popover-user-profile-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+
+    .popover-user-profile-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+
+      .popover-user-profile-top-left {
+        flex: 1;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+
+      .popover-user-profile-top-right {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+
+        .user-profile-fullname {
+          font-size: 16px;
+          font-weight: 600;
+          color: #292929;
+          display: inline-block;
+          max-width: 150px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .user-profile-email {
+          font-size: 12px;
+          color: #757575;
+          display: inline-block;
+          max-width: 150px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .popover-profile-devider {
+      margin: 0;
+    }
+
+    .popover-user-profile-bottom,
+    .popover-user-profile-middle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .popover-profile-link-redirect {
+      font-size: 14px;
+      color: #666;
+      cursor: pointer;
+      padding: 10px 0;
+
+      &:hover {
+        color: #292929;
+      }
+    }
+  }
+}
+
+.popover-learnings {
+  .popover-learning-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 390px;
+
+
+    .popover-learning-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .popover-mylearning {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .popover-learning-btn-viewall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f47425;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        padding: 8px;
+        border-color: transparent;
+      }
+    }
+
+    .popover-learning-courses-wrapper {
+      display: flex;
+      flex-direction: column;
+      max-height: 68vh;
+      overflow-y: scroll;
+
+      .popover-learning-course {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .popover-learning-course-left {
+          flex: 1;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .popover-learning-course-right {
+          flex: 2;
+
+          .popover-learning-course-title {
+            color: #333;
+            font-size: 14px;
+          }
+
+          .popover-learning-course-time {
+            color: #666;
+            font-size: 12px;
+          }
+
+          .popover-learning-course-progress {
+            width: 200px;
+          }
+        }
+
+        &:hover {
+          background-color: #1618230d;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.popover-search {
+  .popover-search-container {
+    min-width: 650px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    .popover-search-header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .popover-search-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      .popover-search-header-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h5 {
+          font-size: 14px;
+        }
+
+        span {
+          font-size: 14px;
+          color: #0000008a;
+
+          &:hover {
+            color: #f05123;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .popover-search-header-divider {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .popover-search-course-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .popover-search-course {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .popover-search-course-left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+
+          }
+        }
+
+        .popover-search-course-right {
+          display: flex;
+          flex-direction: column;
+
+          .popover-search-course-title {
+            color: #2d2f31;
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .popover-search-course-type {
+            color: #6a6f73;
+            font-weight: 700;
+            font-size: 12px;
+
+          }
+
+          .popover-search-course-intructor {
+            font-size: 12px;
+
+            color: #6a6f73;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: #f7f9fa;
+        }
+      }
+    }
+  }
+}

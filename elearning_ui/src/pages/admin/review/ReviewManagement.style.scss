@@ -1,0 +1,27 @@
+.review-management-container {
+    height: 100%;
+
+    .review-header {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 30px;
+
+        span {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    .review-search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .review-search-input {
+            width: 300px;
+        }
+
+        .review-search-btn {}
+    }
+}

@@ -1,0 +1,27 @@
+.order-management-container {
+    height: 100%;
+
+    .order-header {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 30px;
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .order-search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .order-search-input {
+            width: 300px;
+        }
+
+        .order-search-btn {}
+    }
+}

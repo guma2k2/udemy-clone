@@ -1,0 +1,12 @@
+.dashboard-container {
+    height: 1000px;
+    width: 100%;
+
+    .dashboard-header {}
+
+    .dashboard-card-container {
+        display: flex;
+        gap: 20px;
+    }
+
+}

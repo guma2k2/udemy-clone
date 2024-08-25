@@ -1,0 +1,33 @@
+.coupon-management-container {
+    height: 100%;
+
+    .coupon-header {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 30px;
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .coupon-btn-add {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .coupon-search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .coupon-search-input {
+            width: 300px;
+        }
+
+        .coupon-search-btn {}
+    }
+}
